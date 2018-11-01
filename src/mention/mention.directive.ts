@@ -94,7 +94,6 @@ export class MentionDirective implements OnInit, OnChanges {
       }
       // remove items without an labelKey (as it's required to filter the list)
       this.items = this.items.filter(e => e[this.labelKey]);
-      this.items.sort((a,b)=>a[this.labelKey].localeCompare(b[this.labelKey]));
       if (this.searchList && !this.searchList.hidden) {
         this.updateSearchList();
       }

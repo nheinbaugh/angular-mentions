@@ -1,7 +1,7 @@
 {
-  "name": "angular-mentions",
-  "version": "0.8.0",
-  "description": "Angular mentions for text fields.",
+  "name": "@watchtower/angular-mentions",
+  "version": "0.0.2",
+  "description": "Watchtower fork for Angular mentions for text fields.",
   "keywords": [
     "angular",
     "mention",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/dmacfarlane/angular-mentions.git"
   },
-  "author": "Dan MacFarlane",
+  "author": "Nick Heinbaugh",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -22,7 +22,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dist": "ngc -p src/mention"
+    "vso": "ngc -p src/mention && npm publish --tag=dev"
   },
   "private": false,
   "peerDependencies": {
